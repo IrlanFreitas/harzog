@@ -11,9 +11,11 @@
 
     --peso-titulo-destaque: 900;
     --peso-botao: 700;
+    --peso-destaque: 700;
 
     --tamanho-corpo: 1rem;
     --tamanho-titulo: 1.375rem;
     --tamanho-titulo-destaque: 2rem;
+    --tamanho-destaque: 1.375rem;
 
 }

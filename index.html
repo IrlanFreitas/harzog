@@ -12,18 +12,30 @@
     />
 
     <link rel="stylesheet" href="./assets/css/base/base.css" />
+    <link rel="stylesheet" href="./assets/css/components/cabecalho.css" />
     <link rel="stylesheet" href="./assets/css/components/botoes.css" />
     <link rel="stylesheet" href="./assets/css/components/input.css" />
     <link rel="stylesheet" href="./assets/css/components/cartao.css" />
+    <link rel="stylesheet" href="./assets/css/components/item.css" />
+    <link rel="stylesheet" href="./assets/css/components/produto.css" />
+    <link rel="stylesheet" href="./assets/css/components/video.css" />
 
     <title>Home | Casa Verde</title>
   </head>
 
   <body>
+    <header class="container cabecalho">
+      <img class="cabecalho__logo" src="assets/img/icons/logo.svg" alt="Logo da Casa Verde">
+      <a href="#" aria-label="Meu carrinho">
+        <img class="cabecalho__carrinho" 
+          src="assets/img/icons/carrinho.svg" 
+          alt="Icone do carrinho de compras">
+      </a>
+    </header>
     <main class="container">
-      <button class="botao">Assinar Newsletter</button>
-      
 
+      <button class="botao">Assinar Newsletter</button>
+    
       <button class="botao botao--alternativo">Botão Alternativo</button>
 
       <input
@@ -37,6 +49,38 @@
 
         <h2 class="titulo alinhamento--center">Como conseguir <span class="titulo-destaque"> minha planta</span></h2>
 
+        <ul class="lista-item">
+          <li class="item">
+            <span class="item__icone item__icone--cursor"></span>
+            <p>Escolha suas plantas</p>
+          </li>
+          <li class="item">
+            <span class="item__icone item__icone--carrinho"></span>
+            <p>Faça seu pedido</p>
+          </li>
+          <li class="item">
+            <span class="item__icone item__icone--caminhao"></span>
+            <p>Aguarde na sua casa</p>
+          </li>
+        </ul>
+
+      </article>
+
+      <article class="produto">
+        <img src="assets/img/produto-01.png" alt="Foto do produto" class="produto__imagem">
+        <div class="produto__conteudo">
+          <h3 class="produto__titulo titulo-destaque">Ajuda reptans</h3>
+          <p class="produto__preco">R$ 20,00</p>
+          <a href="" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+        </div>
+      </article>
+
+      <article class="cartao-de-video">
+        <div class="cartao-de-video__video">
+          <img src="https://picsum.photos/278/252" alt="Banner do vídeo">
+        </div>
+        <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
+        <p>Publicação em março de 2019</p>
       </article>
 
     </main>
